@@ -25,8 +25,9 @@ area = calcArea(height,width)
 class Beer():
     bottles = 100
     print str(bottles) + " bottles of beer on the wall, " + str(bottles) + " bottles of beer ... Take one down and pass it around. Now you have " + str(bottles - 1) + " bottles of beer on the wall!"
-
+#bottle greater than 1
  while bottles > 1:
+ #take away each time
         bottles-= 1
         print str(bottles) + " bottles of beer on the wall, " + str(bottles) + " bottles of beer ... Take one down and pass it around. Now you have " + str(bottles - 1) + " bottles of beer on the wall!"
 
