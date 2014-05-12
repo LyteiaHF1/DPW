@@ -1,7 +1,7 @@
 '''
 Lyteia Kitchen
 4/12/14
-Lab 3 
+Lab 3
 '''
 import webapp2
 
