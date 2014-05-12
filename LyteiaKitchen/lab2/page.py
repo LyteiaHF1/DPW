@@ -34,4 +34,10 @@ class Form():
 		# Creating a footer variable to contain the end the html code of the page
 		self.footer = '''</body></html>'''
 	# Function to print the contents of this page
-	
+	def print_contents(self, i=''):
+		# If i is empty populate the form for the user to input their information
+		if i=='':
+			return self.head + self.form + self.footer
+		# If the form has been filled out populate what the user entered
+		else:
+			return self.head + i + self.footer
