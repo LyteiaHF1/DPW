@@ -18,7 +18,13 @@ class MainHandler(webapp2.RequestHandler):
 			# If they check neither box no error will happen
 			except StandardError:
 				pass
+            try:
+				# Set relationship equal to itself checkbox if checked
+				relationship_type2 = self.request.GET['relationship2']
+				# If checkbox is checked
+				if relationship_type2:
 
+					relationship = relationship + relationship_type2
 
 app = webapp2.WSGIApplication([
 	('/', MainHandler)
