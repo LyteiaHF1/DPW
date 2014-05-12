@@ -32,19 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/calc/page.py">
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="27" selection-start="37" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+            <state line="6" column="39" selection-start="134" selection-end="134" vertical-scroll-proportion="0.14925373" vertical-offset="0" max-vertical-offset="603">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page.py">
+      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/calc/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="27" selection-start="93" selection-end="93" vertical-scroll-proportion="0.07462686" vertical-offset="0" max-vertical-offset="603">
+            <state line="19" column="27" selection-start="103" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -175,6 +175,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/calc/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="27" selection-start="103" selection-end="383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
@@ -182,16 +189,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/calc/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="37" selection-end="102" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="93" selection-end="93" vertical-scroll-proportion="0.07462686" vertical-offset="0" max-vertical-offset="603">
+        <state line="6" column="39" selection-start="134" selection-end="134" vertical-scroll-proportion="0.14925373" vertical-offset="0" max-vertical-offset="603">
           <folding />
         </state>
       </provider>
