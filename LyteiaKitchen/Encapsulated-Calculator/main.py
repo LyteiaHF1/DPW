@@ -4,10 +4,12 @@ Lyteia Kitchen
 Lab 3
 '''
 import webapp2
-
+#gets page.py
+from page import Page
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        #this is getting the class page
+        page = Page()
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
