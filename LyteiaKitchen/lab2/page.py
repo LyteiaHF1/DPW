@@ -29,4 +29,9 @@ class Form():
 				<input type='checkbox' name='relationship1' value='Friend'/><p>Friend</p>
 				<input type='checkbox' name='relationship2' value='Co-worker'/><p>Co-worker</p> <br>
 				<input type='submit' value ='Enter' id='button'/>
-		
+		</form>
+		'''
+		# Creating a footer variable to contain the end the html code of the page
+		self.footer = '''</body></html>'''
+	# Function to print the contents of this page
+	
