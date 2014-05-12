@@ -1,7 +1,7 @@
 class Form():
 	# Init function that will run when the page is opened
 	def __init__(self, main_self):
-		#a head variable to contain the html head code
+		# Creating a head variable to contain the html head code
 		self.head = ''' <!DOCTYPE HTML>
 		<html>
 			<head>
