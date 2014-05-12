@@ -9,9 +9,8 @@ from page import Form
 # aritcles i read to help with this assignment
 #http://dev.fyicenter.com/Interview-Questions/Python/How_to_make_Forms_in_python_.html
 #http://learnpythonthehardway.org/book/ex51.html
-    '''
-        this one was very helpful
-    '''
+        #this one was very helpful
+
 class MainHandler(webapp2.RequestHandler):
 	def get(self):
 		if self.request.GET:
