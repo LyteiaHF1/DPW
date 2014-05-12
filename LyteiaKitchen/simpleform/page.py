@@ -16,7 +16,7 @@ class Page():
             </header>
             <div id="main">
                 <section>
-                    <p>%s is a community devoted to the art of Collecting Sneakears of all kinds.</p>
+                    <p>%s is a community devoted to the art of Collecting Sneakears of all kinds.SoleSearch is a community for Sneakerheads so anything your little sole desire's are included in the newsletters.</p>
                 </section>
                 <aside>''' %(self.title, self.site_name, self.site_name)
         self.confirmation = '''
@@ -115,10 +115,7 @@ class Page():
 </html>'''
 
     def print_form_results(self, i=""):
-        """
-        if the parameter i is an empty string, return the basic attributes for the default page
-        else return the the attributes for the page with the contents of i for the form results page
-        """
+
         if i=="":
             return self.head + self.form + self.ender
         else:

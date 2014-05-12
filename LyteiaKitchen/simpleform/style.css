@@ -55,7 +55,7 @@ footer p {
     font-size: 0.95em;
     padding: 0 10px;
     background: #e5e5e5;
-    border: 1px dashed #d5d5d5;
+    border: 1px #d5d5d5;
 }
 form {
     width: 100%;
@@ -69,7 +69,7 @@ fieldset {
 }
 legend {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
-  Helvetica, Arial, "Lucida Grande", sans-serif;
+  Helvetica, Arial, sans-serif;
 }
 form input, form select{
     font-size: 0.75em;
