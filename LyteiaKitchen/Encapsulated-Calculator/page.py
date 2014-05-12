@@ -14,3 +14,13 @@ class Page():
             </header>
             <div id="main">
         '''
+        self.__form = '''
+             </div>
+        '''
+        self.__footer = '''
+            </div>
+        </div>
+    </body>
+</html>
+        '''
+
