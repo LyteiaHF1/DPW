@@ -40,6 +40,45 @@ class MainHandler(webapp2.RequestHandler):
         eggs.need = 1 #carton
         eggs.img ="http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
 
+         #Water Instance
+
+        water = List()
+        water.name = 'Water'
+        water.price =  5 #$
+        water.need = 1 #cases 24 pack
+        water.img ="http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
+
+       
+#Objects
+class List(object):
+    def __init__(self):
+        self.name = ''
+        self.__price = 0
+        self.__need = 0
+        self.img = ''
+
+    #Getter for price
+    @property
+    def price(self):
+        return self.__price
+
+
+    #Setter for price
+    @price.setter
+    def price(self, v):
+        self.__price = v
+
+    #Getter for need
+    @property
+    def need(self):
+        return self.__need
+
+    #Setter for need
+    @need.setter
+    def need(self, v):
+        self.__need = v
+
+
 
 
 
