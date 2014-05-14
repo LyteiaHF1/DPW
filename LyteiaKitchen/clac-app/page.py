@@ -1,3 +1,8 @@
+'''
+Lyteia Kitchen
+5/14/13
+Lab 3
+'''
 class Page():
     def __init__(self):
         self.__header = '''
