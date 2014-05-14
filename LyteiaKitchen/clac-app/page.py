@@ -17,11 +17,11 @@ class Page():
 
         self.__form = '''
             <form action="" method="GET" name="list" id="buttons">
-                <p><a href="/?shop=1" name="shop" id="">/a></p>
-                <p><a href="/?shop=2" name="shop" id=""></a></p>
-                <p><a href="/?shop=3" name="shop" id=""></a></p>
-                <p><a href="/?shop=4" name="shop" id=""></a></p>
-                <p><a href="/?shop=5" name="shop" id=""></a></p>
+                <p><a href="/?shop=1" name="shop" id="gfruit">Grape Fruit</a></p>
+                <p><a href="/?shop=2" name="shop" id="proteinp">Protein Powder</a></p>
+                <p><a href="/?shop=3" name="shop" id="wwb">Whole Wheat Bread</a></p>
+                <p><a href="/?shop=4" name="shop" id="eggs">Eggs</a></p>
+                <p><a href="/?shop=5" name="shop" id="water">Water</a></p>
             </div>
         '''
 
