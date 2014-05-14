@@ -25,7 +25,17 @@ class Animal(object):
 		self.geolocation = ""
 		self.__sound = ""
 
+class Lion(Animal):
+	def __init__(self):
+		super(Lion,self).__init__()
 
+class Tiger(Animal):
+	def __init__(self):
+		super(Tiger,self).__init__()
+
+class Giantpanda(Animal):
+	def __init__(self):
+		super(Giantpanda,self).__init__()
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
