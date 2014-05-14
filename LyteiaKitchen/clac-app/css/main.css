@@ -1,0 +1,44 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    font-family: helvetica;
+    background: grey;
+}
+
+header p{
+	font-size: larger;
+}
+
+
+form p{
+   display: block;
+    height: 20px;
+    width: 180px;
+    text-align: center;
+    padding: 5px;
+    margin: 25px;
+    background-color: white;
+    border: 1px solid #000;
+}
+
+form p a{
+	text-decoration: none;	
+	color: black;
+}
+
+h1{
+    margin:0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+#finish img{
+    width: 400px;
+   
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}

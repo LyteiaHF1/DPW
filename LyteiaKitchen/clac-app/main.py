@@ -14,7 +14,7 @@ class MainHandler(webapp2.RequestHandler):
         gfruit.name = 'Grape Fruit'
         gfruit.price =  1.26#$
         gfruit.need = 1 #bag
-        gfruit.img ="http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
+        gfruit.img ="http://upload.wikimedia.org/wikipedia/en/e/e6/PT-Test.jpg"
 
         #Protein Powder Instance
 
@@ -22,7 +22,7 @@ class MainHandler(webapp2.RequestHandler):
         proteinp.name = 'Protein Powder'
         proteinp.price = 15 #$
         proteinp.need = 1 #Container
-        proteinp.img = "http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
+        proteinp.img = "http://upload.wikimedia.org/wikipedia/en/e/e6/PT-Test.jpg"
 
         #Whole Wheat Bread Instance
 
@@ -30,7 +30,7 @@ class MainHandler(webapp2.RequestHandler):
         wwb.name = 'Whole Wheat Bread'
         wwb.price = 1.50 #$
         wwb.need = 2 #loaf
-        wwb.img ="http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
+        wwb.img ="http://upload.wikimedia.org/wikipedia/en/e/e6/PT-Test.jpg"
 
         #Eggs Instance
 
@@ -38,7 +38,7 @@ class MainHandler(webapp2.RequestHandler):
         eggs.name = 'Eggs'
         eggs.price = 1 #$
         eggs.need = 1 #carton
-        eggs.img ="http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
+        eggs.img ="http://upload.wikimedia.org/wikipedia/en/e/e6/PT-Test.jpg"
 
          #Water Instance
 
@@ -46,7 +46,7 @@ class MainHandler(webapp2.RequestHandler):
         water.name = 'Water'
         water.price =  5 #$
         water.need = 1 #cases 24 pack
-        water.img ="http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
+        water.img ="http://upload.wikimedia.org/wikipedia/en/e/e6/PT-Test.jpg"
 
          #Grocery List Items Array
         glist = [

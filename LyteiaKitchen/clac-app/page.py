@@ -11,6 +11,7 @@ class Page():
         <div id="wrapper">
             <header>
                 <h1>Shopping List For BCT Weight Loss</h1>
+                <p>Cut Weight Before Basic Training; These 5 Items are Cheap and Help You Cut Weight FAST</p>
             </header>
             <div id="main">
         '''
