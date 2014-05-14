@@ -62,9 +62,36 @@ class MainHandler(webapp2.RequestHandler):
             self.response.write(self.html(glist[shop]))
         self.response.write(page.footer())
 
-    
+         #function for html
+    def html(self, obj):
+        #sales tax
+        sales_tax = .06 #this calc uses florida state tax which is 6%
+        #total = price of object * need of object + sales_tax
+        total = obj.price * obj.need+sales_tax
 
+        finish = '''
+        <div id="finish">
+            <h2>{obj.name}</h2>
+            <img src="{obj.img}" alt="{obj.name}">
+            <ul>
+                <li>
+                    <h4>Price(For 1)</h4>
+                    <p>$ {obj.price} us dollars</p>
+                </li>
+                <li>
+                    <h4>Total Needed</h4>
+                    <p>{obj.need} Items</p>
+                </li>
+                <li>
+                    <h4>Total(with amount needed)</h4>
+                    <p> $ {total} </p>
+                </li>
+            </ul>
+        </div>
+        '''
 
+        finish = finish.format(**locals())
+        return finish
 
 #Objects
 class List(object):
@@ -94,17 +121,6 @@ class List(object):
     @need.setter
     def need(self, v):
         self.__need = v
-
-
-
-
-
-
-
-
-
-
-
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
