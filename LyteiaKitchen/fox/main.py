@@ -26,6 +26,21 @@ class MainHandler(webapp2.RequestHandler):
 		lion.geolocation = 'Sub-Saharan Africa'
 		lion.sound = 'Rawr'
 
+		#Instantiate's Tiger subclass
+		tiger = Tiger()
+		tiger.name = 'Tiger'
+		tiger.phylum = 'Chordata'
+		tiger.animal_class = 'Mammalia'
+		tiger.order = 'Carnivora'
+		tiger.family = 'Felidae'
+		tiger.genus = 'Panthera'
+		tiger.image = ''
+		tiger.lifespan = '20 – 26 Years (In captivity)'
+		tiger.habitat = ''
+		tiger.geolocation = ''
+		tiger.sound = ''
+
+
 class Animal(object):
 	def __init__(self):
 		self.name = ""
