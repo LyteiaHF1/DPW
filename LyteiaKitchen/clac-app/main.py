@@ -48,7 +48,15 @@ class MainHandler(webapp2.RequestHandler):
         water.need = 1 #cases 24 pack
         water.img ="http://upload.wikimedia.org/wikipedia/commons/2/28/US_Navy_010924-N-0063S-501_USS_Bataan_%28LHD_5%29.jpg"
 
-       
+         #Grocery List Items Array
+        glist = [
+            gfruit,proteinp,wwb,eggs,water
+        ]
+
+        
+
+
+
 #Objects
 class List(object):
     def __init__(self):
