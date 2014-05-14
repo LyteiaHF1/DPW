@@ -16,7 +16,7 @@ class Page():
         '''
 
         self.__form = '''
-            <form action="" method="GET" name="list" id="buttons">
+            <form action="" method="GET" name="glist" id="buttons">
                 <p><a href="/?shop=1" name="shop" id="gfruit">Grape Fruit</a></p>
                 <p><a href="/?shop=2" name="shop" id="proteinp">Protein Powder</a></p>
                 <p><a href="/?shop=3" name="shop" id="wwb">Whole Wheat Bread</a></p>
