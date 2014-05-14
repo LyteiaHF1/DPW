@@ -10,6 +10,21 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         #Instantiate Page class, this contains the html.
         page = Page()
+        #Instantiate's Lion subclass
+		lion = Lion()
+
+		#Assign Info to attributes from Lion's superclass Animal
+		lion.name = 'Lion'
+		lion.phylum = 'Chordata'
+		lion.animal_class = 'Mammalia'
+		lion.order = 'Carnivora'
+		lion.family = 'Felidea'
+		lion.genus = 'Panthera'
+		lion.image = ''
+		lion.lifespan = '15 Years'
+		lion.habitat = 'Tropical'
+		lion.geolocation = 'Sub-Saharan Africa'
+		lion.sound = 'Rawr'
 
 class Animal(object):
 	def __init__(self):
