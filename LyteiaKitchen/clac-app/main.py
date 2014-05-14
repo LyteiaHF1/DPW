@@ -53,7 +53,16 @@ class MainHandler(webapp2.RequestHandler):
             gfruit,proteinp,wwb,eggs,water
         ]
 
-        
+        #HTML
+        self.response.write(page.header())
+        self.response.write(page.form())
+        if self.request.GET:
+            shop = (int(self.request.GET['shop']))-1
+            print shop
+            self.response.write(self.html(glist[shop]))
+        self.response.write(page.footer())
+
+    
 
 
 
