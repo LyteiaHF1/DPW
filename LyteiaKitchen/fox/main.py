@@ -36,9 +36,9 @@ class MainHandler(webapp2.RequestHandler):
 		tiger.genus = 'Panthera'
 		tiger.image = ''
 		tiger.lifespan = '20 – 26 Years (In captivity)'
-		tiger.habitat = ''
-		tiger.geolocation = ''
-		tiger.sound = ''
+		tiger.habitat = 'Trees, Bushes, and Clumps of Tall Grass.'
+		tiger.geolocation = 'Southeast Asia, China, Korea and Russia'
+		tiger.sound = 'Chuff'
 
 
 class Animal(object):
