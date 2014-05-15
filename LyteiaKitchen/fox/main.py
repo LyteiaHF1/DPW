@@ -42,7 +42,7 @@ class MainHandler(webapp2.RequestHandler):
 
 		#Instantiate's Giant Panda subclass
 		panda = Giantpanda()
-		panda.name = ''
+		panda.name = 'Giant Panda'
 		panda.phylum = ''
 		panda.animal_class = ''
 		panda.order = ''
