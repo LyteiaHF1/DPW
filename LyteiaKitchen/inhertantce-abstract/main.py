@@ -9,9 +9,10 @@ class MainHandler(webapp2.RequestHandler):
         p = FormPage()
         p.title = "Welcome To All"
         p.css_url = "css/styles.css"
+        p.form_header = "Enter Your Name"
         self.response.write(p.print_out())
 
-        p2 = FormPage()
+        #p2 = FormPage()
 
 
 
@@ -70,6 +71,11 @@ class FormPage(Page):
         self.__form_close = '</form>'
         self.form_header = ">>Form Header<<"
         self._content = self.form_header + self.__form_open + self.__inputs+ self.__form_close
+
+    def update(self):
+        self.all = self._open + self.form_header + self.__form_open + self.__inputs+ self.__form_close+ self._close
+        self.all = self.all.format(**locals())
+
 
 
 

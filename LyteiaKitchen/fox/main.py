@@ -11,7 +11,7 @@ class MainHandler(webapp2.RequestHandler):
         #Instantiate Page class, this contains the html.
         page = Page()
         #Instantiate's Lion subclass
-		lion = Lion()
+	    lion = Lion()
 
 		#Assign Info to attributes from Lion's superclass Animal
 		lion.name = 'Lion'

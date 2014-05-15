@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="0" selection-start="1918" selection-end="1918" vertical-scroll-proportion="1.476695" vertical-offset="578" max-vertical-offset="1365">
+            <state line="13" column="8" selection-start="258" selection-end="258" vertical-scroll-proportion="0.4131356" vertical-offset="0" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
@@ -51,8 +51,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/page.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -113,6 +113,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -296,7 +297,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="1918" selection-end="1918" vertical-scroll-proportion="1.476695" vertical-offset="578" max-vertical-offset="1365">
+        <state line="13" column="8" selection-start="258" selection-end="258" vertical-scroll-proportion="0.4131356" vertical-offset="0" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
