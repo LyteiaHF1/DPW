@@ -18,9 +18,9 @@ class Page(object):
     '''
         self.body = '''
         <form method='GET' name='animals' id='links'>
-            <a href='/?animal=1' name = 'animal' class ='link' id=''></a>
-            <a href='/?animal=2' name = 'animal' class ='link' id=''></a>
-            <a href='/?animal=3' name = 'animal' class ='link' id=''></a>
+            <a href='/?animal=1' name = 'animal' class ='link' id='lion'>Lion</a>
+            <a href='/?animal=2' name = 'animal' class ='link' id='tiger'>Tiger</a>
+            <a href='/?animal=3' name = 'animal' class ='link' id='panda'>Panda</a>
         </form>
         '''
         self.footer = '''

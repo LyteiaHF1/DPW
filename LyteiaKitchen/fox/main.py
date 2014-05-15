@@ -40,6 +40,20 @@ class MainHandler(webapp2.RequestHandler):
 		tiger.geolocation = 'Southeast Asia, China, Korea and Russia'
 		tiger.sound = 'Chuff'
 
+		#Instantiate's Giant Panda subclass
+		panda = Giantpanda()
+		panda.name = ''
+		panda.phylum = ''
+		panda.animal_class = ''
+		panda.order = ''
+		panda.family = ''
+		panda.genus = ''
+		panda.image = ''
+		panda.lifespan = ''
+		panda.habitat = ''
+		panda.geolocation = ''
+		panda.sound = ''
+
 
 class Animal(object):
 	def __init__(self):
