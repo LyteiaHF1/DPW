@@ -43,16 +43,16 @@ class MainHandler(webapp2.RequestHandler):
 		#Instantiate's Giant Panda subclass
 		panda = Giantpanda()
 		panda.name = 'Giant Panda'
-		panda.phylum = ''
-		panda.animal_class = ''
-		panda.order = ''
-		panda.family = ''
-		panda.genus = ''
+		panda.phylum = 'Chordata'
+		panda.animal_class = 'Mammalia'
+		panda.order = 'Carnivora'
+		panda.family = 'Ursidae'
+		panda.genus = 'Ailuropoda'
 		panda.image = ''
-		panda.lifespan = ''
+		panda.lifespan = '20 y (In Wild)'
 		panda.habitat = ''
-		panda.geolocation = ''
-		panda.sound = ''
+		panda.geolocation = 'Western China'
+		panda.sound = 'bleat'
 
 
 class Animal(object):
