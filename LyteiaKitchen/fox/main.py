@@ -62,6 +62,9 @@ class MainHandler(webapp2.RequestHandler):
 			animal = (int(self.request.GET['animal']))-1
 			self.response.write(self.html(animals[animal]))
 
+	def html(self,obj):
+	    pass
+
 
 class Animal(object):
 	def __init__(self):
