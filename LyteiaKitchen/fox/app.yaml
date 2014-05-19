@@ -5,6 +5,13 @@ api_version: 1
 threadsafe: yes
 
 handlers:
+- url: /css
+  static_dir: css
+
+- url: /images/bg\.jpg
+  static_files: images/bg.jpg
+  upload: images/bg\.jpg
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico

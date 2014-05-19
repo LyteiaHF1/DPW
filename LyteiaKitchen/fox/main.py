@@ -7,12 +7,12 @@ import webapp2
 from page import Page
 
 class MainHandler(webapp2.RequestHandler):
-    def get(self):
-        #Instantiate Page class, this contains the html.
-        page = Page()
-        #Instantiate's Lion subclass
-	    lion = Lion()
+	def get(self):
+		#Instantiate Page class, this contains the html.
+		page = Page()
 
+		#Instantiate's Lion subclass
+		lion = Lion()
 		#Assign Info to attributes from Lion's superclass Animal
 		lion.name = 'Lion'
 		lion.phylum = 'Chordata'
@@ -20,39 +20,47 @@ class MainHandler(webapp2.RequestHandler):
 		lion.order = 'Carnivora'
 		lion.family = 'Felidea'
 		lion.genus = 'Panthera'
-		lion.image = ''
-		lion.lifespan = '15 Years'
+		lion.image = 'http://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg'
+		lion.lifespan = '15'
 		lion.habitat = 'Tropical'
 		lion.geolocation = 'Sub-Saharan Africa'
 		lion.sound = 'Rawr'
 
 		#Instantiate's Tiger subclass
 		tiger = Tiger()
+		#Assign Info to attributes from Tiger's superclass Animal
 		tiger.name = 'Tiger'
 		tiger.phylum = 'Chordata'
 		tiger.animal_class = 'Mammalia'
 		tiger.order = 'Carnivora'
 		tiger.family = 'Felidae'
 		tiger.genus = 'Panthera'
-		tiger.image = ''
-		tiger.lifespan = '20 – 26 Years (In captivity)'
-		tiger.habitat = 'Trees, Bushes, and Clumps of Tall Grass.'
-		tiger.geolocation = 'Southeast Asia, China, Korea and Russia'
+		tiger.image = 'http://upload.wikimedia.org/wikipedia/commons/archive/2/2f/20140122104305%21Tigress_at_Jim_Corbett_National_Park_.jpg'
+		tiger.lifespan = '20-26 Years (In captivity)'
+		tiger.habitat = 'Trees, Bushes, and Clumps of Tall Grass'
+		tiger.geolocation = 'Southern Asia,China,Korea and Russia'
 		tiger.sound = 'Chuff'
 
 		#Instantiate's Giant Panda subclass
-		panda = Giantpanda()
+		panda = GiantPanda()
 		panda.name = 'Giant Panda'
 		panda.phylum = 'Chordata'
 		panda.animal_class = 'Mammalia'
 		panda.order = 'Carnivora'
 		panda.family = 'Ursidae'
 		panda.genus = 'Ailuropoda'
-		panda.image = ''
-		panda.lifespan = '20 y (In Wild)'
+		panda.image = 'http://upload.wikimedia.org/wikipedia/commons/8/8a/Bai_yun_giant_panda.jpg'
+		panda.lifespan = '20 Y (In Wild)'
 		panda.habitat = ''
 		panda.geolocation = 'Western China'
-		panda.sound = 'bleat'
+		panda.sound = 'Bleat'
+
+		#Array to populate animal info
+		animals = [lion, tiger, panda]
+		self.response.write(page.header + page.body + page.footer)
+		if self.request.GET:
+			animal = (int(self.request.GET['animal']))-1
+			self.response.write(self.html(animals[animal]))
 
 
 class Animal(object):
@@ -69,6 +77,14 @@ class Animal(object):
 		self.geolocation = ""
 		self.__sound = ""
 
+		@property
+		def sound(self):
+			return self.__sound
+
+		@sound.setter
+		def sound(self, specific_sound):
+			self.__sound = specific_sound
+
 class Lion(Animal):
 	def __init__(self):
 		super(Lion,self).__init__()
@@ -77,9 +93,10 @@ class Tiger(Animal):
 	def __init__(self):
 		super(Tiger,self).__init__()
 
-class Giantpanda(Animal):
+class GiantPanda(Animal):
 	def __init__(self):
-		super(Giantpanda,self).__init__()
+		super(GiantPanda,self).__init__()
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
