@@ -35,7 +35,7 @@
       <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="21" selection-start="840" selection-end="840" vertical-scroll-proportion="0.8172232" vertical-offset="45" max-vertical-offset="675">
+            <state line="6" column="3" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15817223" vertical-offset="0" max-vertical-offset="675">
               <folding />
             </state>
           </provider>
@@ -60,8 +60,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/page.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/page.py" />
       </list>
     </option>
   </component>
@@ -355,7 +355,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="21" selection-start="840" selection-end="840" vertical-scroll-proportion="0.8172232" vertical-offset="45" max-vertical-offset="675">
+        <state line="6" column="3" selection-start="124" selection-end="124" vertical-scroll-proportion="0.15817223" vertical-offset="0" max-vertical-offset="675">
           <folding />
         </state>
       </provider>
