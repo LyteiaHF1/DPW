@@ -64,11 +64,11 @@ class MainHandler(webapp2.RequestHandler):
 
 	def html(self,obj):
 	    result = '''
-	    <div>
-			<div id='img'>
+	    <div class='container sixteen columns'>
+			<div id='img' class='ten columns'>
 			<img src="{obj.image}" height="350" width="500"/>
 			</div>
-			<div id ='txt'>
+			<div id ='txt' class='five columns'>
 			<h1></h1>
 			<ul>
 				<li>Phylum: {obj.phylum}</li>
