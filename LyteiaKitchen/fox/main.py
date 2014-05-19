@@ -21,7 +21,7 @@ class MainHandler(webapp2.RequestHandler):
 		lion.family = 'Felidea'
 		lion.genus = 'Panthera'
 		lion.image = 'http://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg'
-		lion.lifespan = '15'
+		lion.lifespan = '15 Years'
 		lion.habitat = 'Tropical'
 		lion.geolocation = 'Sub-Saharan Africa'
 		lion.sound = 'Rawr'
@@ -51,7 +51,7 @@ class MainHandler(webapp2.RequestHandler):
 		panda.genus = 'Ailuropoda'
 		panda.image = 'http://upload.wikimedia.org/wikipedia/commons/8/8a/Bai_yun_giant_panda.jpg'
 		panda.lifespan = '20 Y (In Wild)'
-		panda.habitat = ''
+		panda.habitat = 'Bamboo forests'
 		panda.geolocation = 'Western China'
 		panda.sound = 'Bleat'
 

@@ -3,7 +3,7 @@ Lyteia Kitchen
 Lab 4
 5/14/14
 Adding css links for http://www.getskeleton.com/ to help with
-adding style to  the page
+adding style to the page
 '''
 class Page(object):
     def __init__(self):

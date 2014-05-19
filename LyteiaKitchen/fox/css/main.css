@@ -1,11 +1,40 @@
-html{
-	background-image: url("../images/bigbg.jpg");
-	overflow: hidden;
+body{
+	background-image: url("../images/bg.jpg");
+	margin 0 auto;
 }
 
 .container{
-	background-color: black;
+	background-color: #CCCCCC;
 	margin-top: 15px;
 	padding: 15px 30px;
 }
 
+img{
+	float: left;
+	marginp: 10px;
+}
+
+
+#links{
+	background-color: #CCCCCC;
+	text-align: center;
+	padding: 10px;
+}
+
+#links a:hover{
+	color: #FFFFFF;
+}
+
+#img{
+	margin: 25px;
+}
+
+#txt{
+	margin-top: 20px;
+	padding: 5px;
+	font-size: large;
+}
+
+form{
+	margin: 20px;
+}
