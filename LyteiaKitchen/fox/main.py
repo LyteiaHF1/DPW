@@ -63,7 +63,27 @@ class MainHandler(webapp2.RequestHandler):
 			self.response.write(self.html(animals[animal]))
 
 	def html(self,obj):
-	    pass
+	    result = '''
+	    <div>
+			<div id='img'>
+			<img src="{obj.image}" height="350" width="500"/>
+			</div>
+			<div id ='txt'>
+			<h1></h1>
+			<ul>
+				<li>Phylum: {obj.phylum}</li>
+				<li>Class: {obj.animal_class}</li>
+				<li>Order: {obj.order}</li>
+				<li>Family: {obj.family}</li>
+				<li>Genus: {obj.genus}</li>
+				<li>Lifespan: {obj.lifespan}</li>
+				<li>Habitat: {obj.habitat}</li>
+				<li>Geolocation: {obj.geolocation}</li>
+			</ul>
+			<p>What does the {obj.name} say? <br> {obj.sound}</p>
+			</div>
+		</div>
+		'''
 
 
 class Animal(object):
