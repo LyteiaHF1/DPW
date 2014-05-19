@@ -13,6 +13,9 @@ class Page(object):
     <head>
         <title>Animal Info</title>
         <link rel='stylesheet' type='text/css' href='css/main.css'/>
+        <link rel='stylesheet' type='text/css' href='css/base.css' />
+        <link rel='stylesheet' type='text/css' href='css/layout.css' />
+        <link rel='stylesheet' type='text/css' href='css/skeleton.css' />
     </head>
     <body> <div class='container'>
     '''
