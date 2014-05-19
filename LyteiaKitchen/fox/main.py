@@ -84,10 +84,10 @@ class MainHandler(webapp2.RequestHandler):
 			</div>
 		</div>
 		'''
-		#Method format for big strings
-		result = result.format(**locals())
-		#Returns result to be put on screen
-		return result
+            #Method format for big strings
+            result = result.format(**locals())
+            #Returns result to be put on screen
+            return result
 
 
 class Animal(object):
