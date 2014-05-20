@@ -26,7 +26,16 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="216" selection-end="216" vertical-scroll-proportion="0.30927834" vertical-offset="0" max-vertical-offset="582">
+            <state line="13" column="28" selection-start="263" selection-end="263" vertical-scroll-proportion="0.33620688" vertical-offset="0" max-vertical-offset="580">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="0" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
               <folding />
             </state>
           </provider>
@@ -42,6 +51,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/page.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -156,9 +166,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="0" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="216" selection-end="216" vertical-scroll-proportion="0.30927834" vertical-offset="0" max-vertical-offset="582">
+        <state line="13" column="28" selection-start="263" selection-end="263" vertical-scroll-proportion="0.33620688" vertical-offset="0" max-vertical-offset="580">
           <folding />
         </state>
       </provider>

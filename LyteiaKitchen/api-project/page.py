@@ -40,7 +40,6 @@ class Page(object):
         self.all = self._open + self._content + self._close
         self.all = self.all.format(**locals())
 
-
 class FormPage(Page):
     def __init__(self):
         super(FormPage,self).__init__()

@@ -46,7 +46,7 @@ class FormPage(Page):
         super(FormPage,self).__init__()
         self.__form_open = '<form method = "GET" action="">'
         self.__inputs = '''
-    <input type ="text" name = "code" maxLength="5" placeholder="Zip Code">
+    <input type ="text" name = "code" placeholder="City, Country Code">
     <input type ="submit" name = "submit">
         '''
         self.__form_close = '</form>'
