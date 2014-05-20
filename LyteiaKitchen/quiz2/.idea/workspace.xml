@@ -26,7 +26,16 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="3" selection-start="51" selection-end="51" vertical-scroll-proportion="0.10309278" vertical-offset="0" max-vertical-offset="582">
+            <state line="11" column="29" selection-start="216" selection-end="216" vertical-scroll-proportion="0.28350514" vertical-offset="0" max-vertical-offset="582">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/quiz3/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="19" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
               <folding />
             </state>
           </provider>
@@ -156,9 +165,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/quiz3/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="51" selection-end="51" vertical-scroll-proportion="0.10309278" vertical-offset="0" max-vertical-offset="582">
+        <state line="11" column="29" selection-start="216" selection-end="216" vertical-scroll-proportion="0.28350514" vertical-offset="0" max-vertical-offset="582">
           <folding />
         </state>
       </provider>
