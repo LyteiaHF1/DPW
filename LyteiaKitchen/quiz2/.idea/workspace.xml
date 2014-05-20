@@ -26,16 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="29" selection-start="248" selection-end="248" vertical-scroll-proportion="0.22680412" vertical-offset="63" max-vertical-offset="960">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/quiz3/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="29" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1050">
+            <state line="72" column="29" selection-start="1413" selection-end="1413" vertical-scroll-proportion="1.8556701" vertical-offset="0" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -167,14 +158,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/DPW_Kitchen_Lyteia/KitchenLyteia/quiz3/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="29" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" vertical-offset="468" max-vertical-offset="1050">
+        <state line="10" column="19" selection-start="171" selection-end="171" vertical-scroll-proportion="0.25773194" vertical-offset="0" max-vertical-offset="1050">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="29" selection-start="248" selection-end="248" vertical-scroll-proportion="0.22680412" vertical-offset="63" max-vertical-offset="960">
+        <state line="72" column="29" selection-start="1413" selection-end="1413" vertical-scroll-proportion="1.8556701" vertical-offset="0" max-vertical-offset="1170">
           <folding />
         </state>
       </provider>

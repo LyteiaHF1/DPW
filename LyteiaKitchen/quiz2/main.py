@@ -38,10 +38,17 @@ class JeremyS(Sneaker):
         self.__style = 'winged'
         self.condition = 'Deadstock'
 
+        #Call Color Function
+        self.Color()
+
     #getter for style
     @property
     def Style(self):
         return self.__style
+
+    #color function  change color
+    def Color():
+        self.__color = 'blue'
 
 
 #Sub Class 2
@@ -54,6 +61,13 @@ class Jordan(Sneaker):
         self.__style = "Retro 1 "
         self.condition = "Beaters"
 
+        #Calls Color Functon
+        self.Color()
+
     @property
     def Style(self):
         return self.__style
+
+    # Last color function to change color last class
+    def Color():
+        self.__color = 'green'
