@@ -16,7 +16,7 @@ class MainHandler(webapp2.RequestHandler):
 
         if self.request.GET:
            code = self.request.GET['code']
-           url = '' + code
+           url = 'http://production.shippingapis.com/ShippingAPITest.dll?API=TrackV2&XML=' + code
            req = urllib2.Request(url)
            opener = urllib2.build_opener()
            data = opener.open(req)
