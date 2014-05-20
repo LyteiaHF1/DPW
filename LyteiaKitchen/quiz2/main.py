@@ -16,7 +16,18 @@ class JeremyS(Sneaker):
     def __init__(self):
         super(JeremyS, self).__init__()
 
-        self.__type = 'Denim Wings'
-        self._debut = '2011'
+        self._type = 'JS Denim Wings'
+        self.__debut = '2011'
         self.__style = 'winged'
         self.condition = 'Deadstock'
+
+
+#Sub Class 2
+class Jordan(Sneaker):
+    def __init__(self):
+        super(Jordan,self).__init__()
+
+        self._type = "Air Jordan Banned Retro 1 "
+        self.__debut = "1998"
+        self.__style = "Retro 1 "
+        self.condition = "Beaters"
