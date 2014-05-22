@@ -48,6 +48,9 @@ class Counter(object):
     def button(self, b):
         self.__button = b
 
+    def update(self):
+        self.content.format(**locals())
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
