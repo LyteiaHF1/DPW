@@ -12,7 +12,6 @@ class MainHandler(webapp2.RequestHandler):
 
 class Counter(object):
     def __init__(self):
-
         self.__count = 0
         self.open = """
 <!DOCTYPE html>
@@ -33,7 +32,14 @@ class Counter(object):
 </html>
         """
 
-     
+    @property
+    def count(self):
+        return self.__count
+
+    @count.setter
+    def count(self, c):
+        self.__count = c
+
 
 
 app = webapp2.WSGIApplication([
