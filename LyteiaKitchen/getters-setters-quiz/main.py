@@ -10,7 +10,12 @@ class MainHandler(webapp2.RequestHandler):
         p = Counter() #instance of the counter class
 
         if self.request.GET:
-            counter += 1
+
+            counter += 1#should add 1 each time its clicked
+        else:
+            counter = 0
+
+        p.count = counter
 
         self.response.write(p.update())
 
@@ -28,8 +33,10 @@ class Counter(object):
     <body>
         """
         self.content = """
-        #{self.count}
+
+        {self.count}
         """
+        '''number should have changed ! didnt populate '''
         self.__button = """
         <a href=?count=button>Count Up</a>
         """
