@@ -9,7 +9,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
 
 
-
+#Logs is saying ERROR IndentationError: expected an indented block for line 13
 class Counter(object):
     def __init__(self):
         self.__count = 0
