@@ -8,6 +8,10 @@ import webapp2
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = Counter() #instance of the counter class
+
+        if self.request.GET:
+            counter += 1
+
         self.response.write(p.update())
 
 
