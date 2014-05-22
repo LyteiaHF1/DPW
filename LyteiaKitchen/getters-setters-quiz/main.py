@@ -40,6 +40,13 @@ class Counter(object):
     def count(self, c):
         self.__count = c
 
+    @property
+    def button(self):
+        return self.__button
+
+    @button.setter
+    def button(self, b):
+        self.__button = b
 
 
 app = webapp2.WSGIApplication([
