@@ -40,12 +40,13 @@ class Page(object):
         self.all = self._open + self._content + self._close
         self.all = self.all.format(**locals())
 
+
 class FormPage(Page):
     def __init__(self):
         super(FormPage,self).__init__()
         self.__form_open = '<form method = "GET" action="">'
         self.__inputs = '''
-    <input type ="text" name = "code"  placeholder="Tracking Number">
+    <input type ="text" name = "code" maxLength="5" placeholder="Zip Code">
     <input type ="submit" name = "submit">
         '''
         self.__form_close = '</form>'
