@@ -7,6 +7,8 @@ import webapp2
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        p = Counter() #instance of the counter class
+        self.response.write(p.update())
 
 
 #Logs is saying ERROR IndentationError: expected an indented block for line 13
@@ -22,7 +24,7 @@ class Counter(object):
     <body>
         """
         self.content = """
-        {self.count}
+        #{self.count}
         """
         self.__button = """
         <a href=?count=button>Count Up</a>
@@ -49,7 +51,7 @@ class Counter(object):
         self.__button = b
 
     def update(self):
-        self.content.format(**locals())
+        return self.open + self.content + self.button + self.close
 
 
 app = webapp2.WSGIApplication([
