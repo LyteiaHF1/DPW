@@ -48,6 +48,18 @@ class ApiModel(object):
         self.__array = []
         #array to put data in
 
+
+class ApiData(object):
+'''  This holds the data gotten by the model and shown in the view '''
+    def __init__(self):
+        pass
+
+
+class ApiView(object):
+'''  This class handles what the user sees '''
+    def __init__(self):
+        pass
+
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
