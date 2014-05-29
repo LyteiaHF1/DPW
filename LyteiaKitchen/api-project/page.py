@@ -38,6 +38,10 @@ class FormPage(Page):
     <input type ="submit" name ="submit">
         '''
         self.__form_close = '</form>'
+        self.__small_form = '''
+        
+        '''
+
         self.form_header = ">>Form Header<<"
         self._content = self.form_header + self.__form_open + self.__inputs+ self.__form_close
 

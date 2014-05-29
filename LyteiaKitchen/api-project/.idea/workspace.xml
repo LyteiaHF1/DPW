@@ -23,19 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="38" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.4072165" vertical-offset="1158" max-vertical-offset="1740">
+            <state line="82" column="0" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0" vertical-offset="1158" max-vertical-offset="1740">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="49" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="765">
+            <state line="41" column="8" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.6572935" vertical-offset="241" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Volumes/LYTEIA/ClassDays/dpw_erickson-master/api-poc/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="357" column="4" selection-start="14703" selection-end="15498" vertical-scroll-proportion="0.0" vertical-offset="5101" max-vertical-offset="5670">
               <folding />
             </state>
           </provider>
@@ -53,9 +62,9 @@
       <list>
         <option value="$PROJECT_DIR$/../weatherapp-json/main.py" />
         <option value="$PROJECT_DIR$/main 2.py" />
-        <option value="$PROJECT_DIR$/page.py" />
         <option value="$PROJECT_DIR$/main1.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/page.py" />
       </list>
     </option>
   </component>
@@ -446,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="49" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0" vertical-offset="196" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Volumes/LYTEIA/ClassDays/DPW_miller_samantha-master/wk3/miller-samantha-api/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="13" selection-start="2467" selection-end="2478" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2685">
@@ -462,7 +464,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="38" selection-start="2451" selection-end="2451" vertical-scroll-proportion="0.4072165" vertical-offset="1158" max-vertical-offset="1740">
+        <state line="82" column="0" selection-start="2064" selection-end="2064" vertical-scroll-proportion="0.0" vertical-offset="1158" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/LYTEIA/ClassDays/dpw_erickson-master/api-poc/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="357" column="4" selection-start="14703" selection-end="15498" vertical-scroll-proportion="0.0" vertical-offset="5101" max-vertical-offset="5670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="8" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.6572935" vertical-offset="241" max-vertical-offset="840">
           <folding />
         </state>
       </provider>
