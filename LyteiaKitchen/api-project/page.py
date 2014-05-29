@@ -4,33 +4,17 @@ class Page(object):
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>{self.title}</title>
-        <link rel="stylesheet" type="text/css" href= "{self.css_url}"  />
+        <title>Food App</title>
+        <link rel='stylesheet' type='text/css' href='css/base.css'/>
+        <link rel='stylesheet' type='text/css' href='css/layout.css'/>
+        <link rel='stylesheet' type='text/css' href='css/skeleton.css'/>
+        <link rel="stylesheet" type="text/css" href= 'css/main.css'  />
     </head>
     <body> '''
-        self._content = 'This Is My Content!'
+        self._content = ''
         self._close = '''
     </body>
 </html>'''
-
-        self._css_url = ''
-        self._title = ''
-        self.all = ''
-    @property
-    def title(self):
-        return self._title
-
-    @title.setter
-    def title(self, t):
-        self._title = t
-
-    @property
-    def css_url(self):
-        return self._css_url
-
-    @css_url.setter
-    def css_url(self,c):
-        self._css_url = c
 
     def print_out(self):
         self.update()
@@ -40,13 +24,18 @@ class Page(object):
         self.all = self._open + self._content + self._close
         self.all = self.all.format(**locals())
 
+
 class FormPage(Page):
     def __init__(self):
-        super(FormPage,self).__init__()
+        super(FormPage, self).__init__()
         self.__form_open = '<form method = "GET" action="">'
+
         self.__inputs = '''
-    <input type ="text" name = "code"  placeholder="Tracking Number">
-    <input type ="submit" name = "submit">
+    <img src = images/logo1.png>
+    <h4>Hungry</h4>
+    <p>Got an ingredient? Don't know what to have? Need ideas? Tell Us What You Want</p>
+    <input type ="text" class="search" name="prep"  placeholder="Food" required>
+    <input type ="submit" name ="submit">
         '''
         self.__form_close = '</form>'
         self.form_header = ">>Form Header<<"
@@ -55,5 +44,3 @@ class FormPage(Page):
     def update(self):
         self.all = self._open + self.form_header + self.__form_open + self.__inputs+ self.__form_close+ self._close
         self.all = self.all.format(**locals())
-
-
