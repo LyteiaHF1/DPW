@@ -41,6 +41,9 @@ class FormPage(Page):
         self.__small_form = '''
     <header>
         <img src = images/logo1.png>
+        <input type ="text" class="headersearch" name="prep"  placeholder="Food" required>
+        <input type ="submit" name ="submit">
+
     </header>
 
         '''

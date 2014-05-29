@@ -35,7 +35,7 @@
       <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="36" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.63093144" vertical-offset="271" max-vertical-offset="885">
+            <state line="43" column="42" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.6572935" vertical-offset="271" max-vertical-offset="930">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///Volumes/LYTEIA/ClassDays/dpw_erickson-master/api-poc/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="357" column="4" selection-start="14703" selection-end="15498" vertical-scroll-proportion="0.0" vertical-offset="4876" max-vertical-offset="5670">
+            <state line="356" column="0" selection-start="14698" selection-end="14698" vertical-scroll-proportion="0.0" vertical-offset="4951" max-vertical-offset="5670">
               <folding />
             </state>
           </provider>
@@ -471,14 +471,14 @@
     </entry>
     <entry file="file:///Volumes/LYTEIA/ClassDays/dpw_erickson-master/api-poc/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="357" column="4" selection-start="14703" selection-end="15498" vertical-scroll-proportion="0.0" vertical-offset="5101" max-vertical-offset="5670">
+        <state line="356" column="0" selection-start="14698" selection-end="14698" vertical-scroll-proportion="0.0" vertical-offset="4951" max-vertical-offset="5670">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="36" selection-start="1300" selection-end="1300" vertical-scroll-proportion="0.63093144" vertical-offset="271" max-vertical-offset="885">
+        <state line="43" column="42" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.6572935" vertical-offset="271" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
