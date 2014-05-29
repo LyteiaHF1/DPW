@@ -16,7 +16,26 @@ class MainHandler(webapp2.RequestHandler):
         view.form_header = ""
         self.response.write(view.print_out())
 
-    
+        #If Statement for if something is in the url
+        if self.request.GET:
+			#Get info in url
+			prep = self.request.GET['prep']
+			#Sends ingredient into model
+			model = ApiModel(prep)
+			#Tells model to send into and get the data
+			model.send()
+
+
+class ApiModel(object):
+	'''  This model handles fetching, parsing and sorting data from the api '''
+
+	def __init__(self, prep):
+		self.__url = 'http://www.recipepuppy.com/api/?q='
+		self.__request = urllib2.Request(self.__url + prep)
+		self.__opener = urllib2.build_opener()
+
+	def send(self):
+		self.__result = self.__opener.open(self.__request)
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
