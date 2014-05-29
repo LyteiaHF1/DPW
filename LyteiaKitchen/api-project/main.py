@@ -30,10 +30,13 @@ class ApiModel(object):
 	'''  This model handles fetching, parsing and sorting data from the api '''
 
 	def __init__(self, prep):
+	    #api url where the ifo is
 		self.__url = 'http://www.recipepuppy.com/api/?q='
+		#setup for api request
 		self.__request = urllib2.Request(self.__url + prep)
+		#building the opener
 		self.__opener = urllib2.build_opener()
-
+    #send function
 	def send(self):
 		self.__result = self.__opener.open(self.__request)
 
