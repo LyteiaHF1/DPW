@@ -99,6 +99,11 @@ class ApiView(object):
 	@array.setter
 	def array(self, new_array):
 		self.update(new_array)
+
+	@property
+	def content(self):
+		return self.__content
+
 app = webapp2.WSGIApplication([
 	('/', MainHandler)
 ], debug=True)
