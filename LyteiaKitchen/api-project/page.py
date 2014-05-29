@@ -39,7 +39,10 @@ class FormPage(Page):
         '''
         self.__form_close = '</form>'
         self.__small_form = '''
-        
+    <header>
+        <img src = images/logo1.png>
+    </header>
+
         '''
 
         self.form_header = ">>Form Header<<"
