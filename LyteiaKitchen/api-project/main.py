@@ -91,6 +91,14 @@ class ApiView(object):
 			self.__content +=  '<li>ingredients: ' + i.meats + '</li>'
 			self.__content += "<a href=" + i.href + ">Recipe</a>"
 			self.__content += '</div>'
+
+	@property
+	def array(self):
+		return self.__array
+
+	@array.setter
+	def array(self, new_array):
+		self.update(new_array)
 app = webapp2.WSGIApplication([
 	('/', MainHandler)
 ], debug=True)
