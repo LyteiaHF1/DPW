@@ -81,8 +81,16 @@ class ApiView(object):
 		#Sets array equal to the ApiData class
 		self.__array = ApiData()
 
-
-
+	#upadets
+	def update(self, recipes):
+		self.__content = ''
+		for i in recipes:
+			self.__array = i
+			self.__content += "<div class ='container' class='container sixteen columns results'>"
+			self.__content += '<h4>' + i.title + '</h4>'
+			self.__content +=  '<li>ingredients: ' + i.meats + '</li>'
+			self.__content += "<a href=" + i.href + ">Recipe</a>"
+			self.__content += '</div>'
 app = webapp2.WSGIApplication([
 	('/', MainHandler)
 ], debug=True)
