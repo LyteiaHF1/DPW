@@ -24,6 +24,8 @@ class MainHandler(webapp2.RequestHandler):
 			model = ApiModel(prep)
 			#Tells model to send into and get the data
 			model.send()
+			#Creates View
+			view = ApiView()
 
 
 class ApiModel(object):
@@ -52,7 +54,9 @@ class ApiModel(object):
 class ApiData(object):
 '''  This holds the data gotten by the model and shown in the view '''
     def __init__(self):
-        pass
+        self.title = ''
+        self.meats = ''
+        self.href = ''
 
 
 class ApiView(object):
