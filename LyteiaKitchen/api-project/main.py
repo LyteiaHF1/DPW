@@ -39,11 +39,14 @@ class ApiModel(object):
     #send function
 	def send(self):
 		self.__result = self.__opener.open(self.__request)
+		self.sort()
 
 
     def sort(self):
+        #parse Json
         self.__json_data = json.load(self.__result)
-        
+        self.__array = []
+        #array to put data in
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
