@@ -49,6 +49,9 @@ class ApiModel(object):
         self.__json_data = json.load(self.__result)
         self.__array = []
         #array to put data in
+        #Loop the results
+        for i in self.__json_data['results']:
+            pass
 
 
 class ApiData(object):
