@@ -31,6 +31,13 @@ class Page(object):
         </head>
         <body>
             '''
+        self._body = "<h2>Filler Content</h2>"
+
+
+        self._footer = '''
+    </body>
+ </html>
+        '''
 
 
 app = webapp2.WSGIApplication([
