@@ -23,28 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="54" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.7474227" vertical-offset="945" max-vertical-offset="1785">
+            <state line="91" column="49" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Volumes/LYTEIA/ClassDays/dpw_erickson-master/api-poc/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="337" column="43" selection-start="13988" selection-end="13988" vertical-scroll-proportion="0.0" vertical-offset="4891" max-vertical-offset="5670">
+            <state line="26" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.685413" vertical-offset="0" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -449,23 +440,23 @@
         <state line="49" column="36" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.66137564" vertical-offset="345" max-vertical-offset="1620" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="49" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file:///Volumes/LYTEIA/ClassDays/dpw_erickson-master/api-poc/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="43" selection-start="13988" selection-end="13988" vertical-scroll-proportion="0.0" vertical-offset="4891" max-vertical-offset="5670">
+        <state line="337" column="43" selection-start="13988" selection-end="13988" vertical-scroll-proportion="8.884007" vertical-offset="0" max-vertical-offset="5670">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="271" max-vertical-offset="915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="54" selection-start="2343" selection-end="2343" vertical-scroll-proportion="0.7474227" vertical-offset="945" max-vertical-offset="1785">
+        <state line="26" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.685413" vertical-offset="0" max-vertical-offset="915">
           <folding />
         </state>
       </provider>

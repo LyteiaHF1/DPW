@@ -89,7 +89,7 @@ class ApiView(object):
 		for i in recipes:
 			self.__array = i
 			self.__content += "<div class ='container' class='container sixteen columns results'>"
-			self.__content += '<li>' + i.img + '</li>'
+			self.__content += '<li class="img">' + i.img + '</li>'
 			self.__content += '<h4>' + i.title + '</h4>'
 			self.__content +=  '<li>ingredients: ' + i.meats + '</li>'
 			self.__content += "<a href=" + i.href + ">Recipe</a>"
