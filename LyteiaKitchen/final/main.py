@@ -9,16 +9,25 @@ from xml.dom import minidom
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        view = Page()
 
 
+class ApiModel(object):
+ ''' This class is where i get the api info setup '''
+    def __init__(self):
+        self.__url = "http://rebeccacarroll.com/api/got/got.xml"
+        self.__request = urllib2.Request(self.__url)
+        self.opener = urllib2.buildopener()
+        
 
 
 class ApiData(object):
-    pass
+    def __init__(self):
+        pass
 
 class ApiView(object):
-    pass
+    def __init__(self):
+        pass
 
 
 class Page(object):
