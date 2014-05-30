@@ -34,19 +34,18 @@ class FormPage(Page):
     <img src = images/logo1.png>
     <h4>Hungry</h4>
     <p>Got an ingredient? Don't know what to have? Need ideas? Tell Us What You Want</p>
-    <input type ="text" class="search" name="prep"  placeholder="Food" required>
+    <input type ="text" class="search" name="prep"  placeholder="Food" autofocus required>
     <input type ="submit" name ="submit">
         '''
         self.__form_close = '</form>'
-        self.__small_form = '''
-    <header>
-        <img src = images/logo1.png>
-        <input type ="text" class="headersearch" name="prep"  placeholder="Food" required>
-        <input type ="submit" name ="submit">
+       # self.__small_form = '''
+    #<header>
+       # <img src = images/logo1.png>
+        #<input type ="text" class="headersearch" name="prep"  placeholder="Food" autofocus required>
+       # <input type ="submit" name ="submit">
 
-    </header>
-
-        '''
+   # </header>
+        #'''
 
         self.form_header = ">>Form Header<<"
         self._content = self.form_header + self.__form_open + self.__inputs+ self.__form_close

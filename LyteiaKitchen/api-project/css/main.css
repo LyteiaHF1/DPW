@@ -17,6 +17,10 @@ h3,h4{
 	font-weight: 600;
 }
 
+.main{
+	background-color: black;
+}
+
 input[type=text]
 {
     background-color: #BFBDBD;
