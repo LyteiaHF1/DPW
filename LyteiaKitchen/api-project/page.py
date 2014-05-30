@@ -48,6 +48,7 @@ class FormPage(Page):
         #'''
 
         self.form_header = ">>Form Header<<"
+
         self._content = self.form_header + self.__form_open + self.__inputs+ self.__form_close
 
     def update(self):
