@@ -5,7 +5,7 @@ May 30,2014
 '''
 import webapp2
 import urllib2
-import json
+from xml.dom import minidom
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
@@ -13,13 +13,25 @@ class MainHandler(webapp2.RequestHandler):
 
 
 
+
+class ApiData(object):
+    pass
+
+class ApiView(object):
+    pass
+
+
 class Page(object):
     def __init__(self):
         self._open = '''
 <!DOCTYPE>
     <html>
-        <title>Final | DPW May2014</title>
-       
+        <head>
+         <title>Final | DPW May2014</title>
+        </head>
+        <body>
+            '''
+
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
