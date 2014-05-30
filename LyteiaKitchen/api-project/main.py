@@ -61,6 +61,7 @@ class ApiModel(object):
 			do.title =  i['title']
 			do.meats =  i['ingredients']
 			do.href =  i['href']
+			do.img = i['thumbnail']
 			self.__array.append(do)
 
 	@property
@@ -74,6 +75,7 @@ class ApiData(object):
 		self.title = ''
 		self.meats = ''
 		self.href = ''
+		self.img = ''
 
 class ApiView(object):
 	'''  This class handles what the user sees '''
@@ -87,6 +89,7 @@ class ApiView(object):
 		for i in recipes:
 			self.__array = i
 			self.__content += "<div class ='container' class='container sixteen columns results'>"
+			self.__content += '<li>' + i.img + '</li>'
 			self.__content += '<h4>' + i.title + '</h4>'
 			self.__content +=  '<li>ingredients: ' + i.meats + '</li>'
 			self.__content += "<a href=" + i.href + ">Recipe</a>"
