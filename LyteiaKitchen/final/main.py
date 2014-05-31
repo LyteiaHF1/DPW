@@ -13,16 +13,16 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(view.return_page())
         #instanuates model
         model = ApiModel()
-        
+        view = ApiView()#calls view
+
 
 
 class ApiModel(object):
  ''' This class is where i get the api info setup '''
-     def __init__(self):
+    def __init__(self):
         self.__url = "http://rebeccacarroll.com/api/got/got.xml"
         self.__request = urllib2.Request(self.__url)
         self.__opener = urllib2.build_opener()
-        #self.__xmldoc.getElementsByTagName('house')[0].firstChild.nodeValue
 
     def send(self):
         self.__result = self.__opener.open(self.__request)#setting up result
