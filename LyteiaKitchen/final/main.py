@@ -78,7 +78,7 @@ class ApiView(object):
             #print i[0]
     @property
     def content(self):
-        return __self.content
+        return __self.__content
 
 class Page(object):
     def __init__(self):
