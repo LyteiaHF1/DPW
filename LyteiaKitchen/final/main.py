@@ -27,7 +27,7 @@ class ApiModel(object):
 
     def sort(self):
     #pasre xml and store in variable
-        self.__xmldoc = minidom.parse()
+        self.__xmldoc = minidom.parse(self.__result)
 
 
 
@@ -45,6 +45,11 @@ class ApiView(object):
         self.__content = '''
 
         '''
+        self.__content += ''
+        self.__content += ''
+        self.__content += ''
+        self.__content += ''
+        self.__content += ''
 
 
 class Page(object):
