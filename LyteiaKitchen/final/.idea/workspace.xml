@@ -26,7 +26,7 @@
       <file leaf-file-name="main.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="86" selection-start="291" selection-end="291" vertical-scroll-proportion="0.33505154" vertical-offset="0" max-vertical-offset="1800">
+            <state line="2" column="5" selection-start="24" selection-end="24" vertical-scroll-proportion="0.05154639" vertical-offset="0" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -103,6 +103,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -293,7 +294,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="86" selection-start="291" selection-end="291" vertical-scroll-proportion="0.33505154" vertical-offset="0" max-vertical-offset="1800">
+        <state line="2" column="5" selection-start="24" selection-end="24" vertical-scroll-proportion="0.05154639" vertical-offset="0" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
