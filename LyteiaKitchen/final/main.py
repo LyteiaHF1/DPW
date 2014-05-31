@@ -18,7 +18,7 @@ class ApiModel(object):
     def __init__(self):
             self.__url = "http://rebeccacarroll.com/api/got/got.xml"
             self.__request = urllib2.Request(self.__url)
-            self.opener = urllib2.buildopener()
+            self.__opener = urllib2.build_opener()
             self.__xmldoc.getElementsByTagName()[].firstChild.nodeValue
 
 
