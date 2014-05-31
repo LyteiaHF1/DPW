@@ -11,10 +11,13 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         #writes page
         page = Page()
-        self.response.write(page.return_page())
-        #instanuates model
-        model = ApiModel()
-        view = ApiView(model.house_data)#instanuates view
+        if self.request.GET:
+            #model is created
+            model = ApiModel()
+            model.counter = int(self.request.GET["n"])
+            view = ApiView(model.house_data)
+
+            self.response.write(page.return_page())
         self.response.write(view.content)#writes content
 
 
@@ -91,10 +94,10 @@ class Page(object):
         <body>
         <a href="?n=0">Lannister</a>
         <a href="?n=1">Stark</a>
-        <a href="?">Baratheon</a>
-        <a href="?">Greyjoy</a>
-        <a href="?">Targaryen</a>
-        <a href="?">Tully</a>
+        <a href="?n=2">Baratheon</a>
+        <a href="?n=3">Greyjoy</a>
+        <a href="?n=4">Targaryen</a>
+        <a href="?n=5">Tully</a>
             '''
         self._body ='<h2>Game of Thrones</h2>'
 
