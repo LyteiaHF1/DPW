@@ -41,7 +41,7 @@ class ApiModel(object):
             image = i.getElementsByTagName('image')[0].firstChild.nodeValue
 
             house_dict =[name,sigil,motto,color1,color2,head,image]
-            
+
 
 
 
@@ -59,16 +59,25 @@ class ApiView(object):
  ''' This class is what the user sees '''
     def __init__(self, data):
     #to hold content
-        self.__content = '''
+        self.__content = ''
         #loop here
+        for i in house_data.house:
+            self.__content +='<p> Name: ' +i[0]+ '</p>'
+            self.__content +='<p> Sigil: ' +i[1]+ '</p>'
+            self.__content +='<p> Motto: ' +i[2]+ '</p>'
+            self.__content +='<p> Color1: ' +i[3]+ '</p>'
+            self.__content +='<p> Color2: ' +i[4]+ '</p>'
+            self.__content +='<p> Head: ' +i[5]+ '</p>'
+            self.__content +='<p> image: ' +i[6]+ '</p>'
+
+            print i[0]
+
+            
 
 
-        '''
-        self.__content += ''
-        self.__content += ''
-        self.__content += ''
-        self.__content += ''
-        self.__content += ''
+
+
+
 
 
 class Page(object):
