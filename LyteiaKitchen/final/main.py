@@ -9,6 +9,7 @@ from xml.dom import minidom
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #writes page
         page = Page()
         self.response.write(page.return_page())
         #instanuates model
@@ -61,7 +62,7 @@ class ApiData(object):
 
 class ApiView(object):
  ''' This class is what the user sees '''
-    def __init__(self, data):
+    def __init__(self, house_data):
     #to hold content
         self.__content = ''
         #loop here
