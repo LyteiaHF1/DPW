@@ -13,21 +13,17 @@ class MainHandler(webapp2.RequestHandler):
         page = Page()
         #if self.request.GET:
             #model is created
-            #n =0;
-            #model.n = int(self.request.GET['n'])
-         model = ApiModel()
+        model = ApiModel()
         view = ApiView(model.house_data)
 
         self.response.write(page.return_page())
         self.response.write(view.content)#writes content
-        #self.response.write(page.return_page())
 
 
 ''' This class is where the api makes its calls to url, handles parsing data etc'''
 class ApiModel(object):
     def __init__(self):
         self.__url = "http://rebeccacarroll.com/api/got/got.xml"
-        #self.__n = 0 #to keep count links
         self.__request = urllib2.Request(self.__url)
         self.__opener = urllib2.build_opener()
         self.send()#call send function
