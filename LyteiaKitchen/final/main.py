@@ -10,7 +10,7 @@ from xml.dom import minidom
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = Page()
-        #self.response.write(view.)
+        self.response.write(view.return_page())
 
 
 class ApiModel(object):
@@ -28,8 +28,22 @@ class ApiModel(object):
     def sort(self):
     #pasre xml and store in variable
         self.__xmldoc = minidom.parse(self.__result)
-        self.__xmldoc.getElementsByTagName('house')[0].firstChild.nodeValue
-        
+        self.__house_data = ApiData()
+        houses = self.__xmldoc.getElementsByTagName('house')
+        for i in house:
+            house_dict = dict()
+            name = i.getElementsByTagName('name')[0].firstChild.nodeValue
+            sigil = i.getElementsByTagName('sigil')[0].firstChild.nodeValue
+            motto = i.getElementsByTagName('motto')[0].firstChild.nodeValue
+            color1 = i.getElementsByTagName('color1')[0].firstChild.nodeValue
+            color2 = i.getElementsByTagName('color2')[0].firstChild.nodeValue
+            head = i.getElementsByTagName('head')[0].firstChild.nodeValue
+            image = i.getElementsByTagName('image')[0].firstChild.nodeValue
+
+            house_dict =[name,sigil,motto,color1,color2,head,image]
+            
+
+
 
 
 
@@ -46,6 +60,8 @@ class ApiView(object):
     def __init__(self, data):
     #to hold content
         self.__content = '''
+        #loop here
+
 
         '''
         self.__content += ''
