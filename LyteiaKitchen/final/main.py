@@ -33,14 +33,14 @@ class ApiModel(object):
 
 
 class ApiData(object):
- ''' This class is to hold the data switihched between modee and view  '''
+ ''' This class is to hold the data switihched between model and view  '''
     def __init__(self):
     #empty array for data
         self.house = []
 
 class ApiView(object):
  ''' This class is what the user sees '''
-    def __init__(self):
+    def __init__(self, data):
     #to hold content
         self.__content = '''
 
