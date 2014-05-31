@@ -14,7 +14,7 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(page.return_page())
         #instanuates model
         model = ApiModel()
-        view = ApiView(view.house_data)#calls view
+        view = ApiView(model.house_data)#instanuates view
         self.response.write(view.content)#writes content
 
 
