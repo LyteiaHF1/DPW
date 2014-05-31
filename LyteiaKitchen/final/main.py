@@ -11,13 +11,12 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         #writes page
         page = Page()
-        if self.request.GET:
+        #if self.request.GET:
             #model is created
-            model = ApiModel()
-            model.counter = int(self.request.GET["n"])
-            view = ApiView(model.house_data)
+        model = ApiModel()
+        view = ApiView(model.house_data)
 
-            self.response.write(page.return_page())
+        self.response.write(page.return_page())
         self.response.write(view.content)#writes content
 
 
