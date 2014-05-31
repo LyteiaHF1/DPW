@@ -63,18 +63,18 @@ class ApiData(object):
 class ApiView(object):
     def __init__(self, house_data):
     #to hold content
+
         self.__content = ''
         #loop here gets data from dictionary
         for i in house_data.house:
             self.__content +='<p> Name: ' +i[0]+ '</p>'
+			#self.__content += "<a href='?house='>"+i[1]+"</a>"
             self.__content +='<p> Sigil: ' +i[1]+ '</p>'
             self.__content +='<p> Motto: ' +i[2]+ '</p>'
             self.__content +='<p> Color1: ' +i[3]+ '</p>'
             self.__content +='<p> Color2: ' +i[4]+ '</p>'
             self.__content +='<p> Head: ' +i[5]+ '</p>'
             self.__content +='<img src='"+i[6]+ "'>"'
-
-
             #print i[0]
     @property
     def content(self):
@@ -89,19 +89,14 @@ class Page(object):
          <title>Final | DPW May2014</title>
         </head>
         <body>
+        <a href="?n=0">Lannister</a>
+        <a href="?n=1">Stark</a>
+        <a href="?">Baratheon</a>
+        <a href="?">Greyjoy</a>
+        <a href="?">Targaryen</a>
+        <a href="?">Tully</a>
             '''
-        self._body ='''
-        <h2>Game of Thrones</h2>
-
-            <li>{obj[house]}</li>
-				<li>{obj[name]}</li>
-				<li>{obj[sigil]}</li>
-				<li>{obj[motto]}</li>
-				<li>{obj[color1]}</li>
-				<li>{obj[color2]}</li>
-				<li>{obj[head]}</li>
-				<li>{obj[img]}</li>
-        '''
+        self._body ='<h2>Game of Thrones</h2>'
 
 
 
@@ -112,8 +107,6 @@ class Page(object):
     def return_page(self):
      #def return_page(self):
         return self._open + self._body + self._footer
-
-
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
