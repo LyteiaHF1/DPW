@@ -9,11 +9,12 @@ from xml.dom import minidom
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        view = Page()
-        self.response.write(view.return_page())
+        page = Page()
+        self.response.write(page.return_page())
         #instanuates model
         model = ApiModel()
-        view = ApiView()#calls view
+        view = ApiView(view.house_data)#calls view
+        self.response.write(view.content)#writes content
 
 
 
@@ -23,7 +24,7 @@ class ApiModel(object):
         self.__url = "http://rebeccacarroll.com/api/got/got.xml"
         self.__request = urllib2.Request(self.__url)
         self.__opener = urllib2.build_opener()
-        self.send()
+        self.send()#call send function
 
     def send(self):
         self.__result = self.__opener.open(self.__request)#setting up result
@@ -45,10 +46,7 @@ class ApiModel(object):
             image = i.getElementsByTagName('image')[0].firstChild.nodeValue
 
             house_dict =[name,sigil,motto,color1,color2,head,image]
-
-
-
-
+        self.__house_data_house.append(house_dict)
     @property
     def house_data(self):
         return self.__house_data
