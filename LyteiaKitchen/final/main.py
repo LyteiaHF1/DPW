@@ -47,7 +47,7 @@ class ApiModel(object):
             image = i.getElementsByTagName('image')[0].firstChild.nodeValue
 
             house_dict =[name,sigil,motto,color1,color2,head,image]
-        self.__house_data_house.append(house_dict)
+            self.__house_data_house.append(house_dict)
     @property
     def house_data(self):
         return self.__house_data
@@ -65,7 +65,7 @@ class ApiView(object):
     def __init__(self, house_data):
     #to hold content
         self.__content = ''
-        #loop here
+        #loop here gets data from dictionary
         for i in house_data.house:
             self.__content +='<p> Name: ' +i[0]+ '</p>'
             self.__content +='<p> Sigil: ' +i[1]+ '</p>'
@@ -78,7 +78,7 @@ class ApiView(object):
             #print i[0]
     @property
     def content(self):
-        return __self.__content
+        return self.__content
 
 class Page(object):
     def __init__(self):
