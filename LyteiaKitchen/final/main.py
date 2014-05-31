@@ -71,8 +71,10 @@ class ApiView(object):
             self.__content +='<p> image: ' +i[6]+ '</p>'
 
             print i[0]
+    @property
+    def content(self):
+        return __self.content
 
-            
 
 
 
