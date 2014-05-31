@@ -10,24 +10,32 @@ from xml.dom import minidom
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = Page()
+        #self.response.write(view.)
 
 
 class ApiModel(object):
  ''' This class is where i get the api info setup '''
     def __init__(self):
-        self.__url = "http://rebeccacarroll.com/api/got/got.xml"
-        self.__request = urllib2.Request(self.__url)
-        self.opener = urllib2.buildopener()
-        
+            self.__url = "http://rebeccacarroll.com/api/got/got.xml"
+            self.__request = urllib2.Request(self.__url)
+            self.opener = urllib2.buildopener()
+            self.__xmldoc.getElementsByTagName()[].firstChild.nodeValue
+
 
 
 class ApiData(object):
+ ''' This class is to hold the data switihched between modee and view  '''
     def __init__(self):
-        pass
+    #empty array for data
+        self.house = []
 
 class ApiView(object):
+ ''' This class is what the user sees '''
     def __init__(self):
-        pass
+    #to hold content
+        self.__content = '''
+
+        '''
 
 
 class Page(object):
@@ -47,6 +55,8 @@ class Page(object):
     </body>
  </html>
         '''
+     def return_page(self):
+        return self._open + self._body + self._footer
 
 
 app = webapp2.WSGIApplication([
