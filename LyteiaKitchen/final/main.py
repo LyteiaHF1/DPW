@@ -22,10 +22,11 @@ class ApiModel(object):
         #self.__xmldoc.getElementsByTagName('house')[0].firstChild.nodeValue
 
     def send(self):
-        self.__result = self.__opener.open(self.__request)
-        self.sort()
+        self.__result = self.__opener.open(self.__request)#setting up result
+        self.sort()#call sort function
 
     def sort(self):
+    #pasre xml and store in variable
         self.__xmldoc = minidom.parse()
 
 
