@@ -28,6 +28,9 @@ class ApiModel(object):
     def sort(self):
     #pasre xml and store in variable
         self.__xmldoc = minidom.parse(self.__result)
+        self.__xmldoc.getElementsByTagName('house')[0].firstChild.nodeValue
+        
+
 
 
 
