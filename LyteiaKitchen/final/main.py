@@ -20,8 +20,8 @@ class MainHandler(webapp2.RequestHandler):
 
 
 class ApiModel(object):
- ''' This class is where i get the api info setup '''
     def __init__(self):
+    #def __init__(self):
         self.__url = "http://rebeccacarroll.com/api/got/got.xml"
         self.__request = urllib2.Request(self.__url)
         self.__opener = urllib2.build_opener()
@@ -55,14 +55,15 @@ class ApiModel(object):
 
 
 class ApiData(object):
- ''' This class is to hold the data switihched between model and view  '''
     def __init__(self):
+    #def __init__(self):
     #empty array for data
         self.house = []
 
 class ApiView(object):
- ''' This class is what the user sees '''
     def __init__(self, house_data):
+
+    #def __init__(self, house_data):
     #to hold content
         self.__content = ''
         #loop here gets data from dictionary
@@ -97,7 +98,8 @@ class Page(object):
     </body>
  </html>
         '''
-     def return_page(self):
+    def return_page(self):
+     #def return_page(self):
         return self._open + self._body + self._footer
 
 
