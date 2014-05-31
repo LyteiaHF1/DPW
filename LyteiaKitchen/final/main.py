@@ -72,7 +72,8 @@ class ApiView(object):
             self.__content +='<p> Color1: ' +i[3]+ '</p>'
             self.__content +='<p> Color2: ' +i[4]+ '</p>'
             self.__content +='<p> Head: ' +i[5]+ '</p>'
-            self.__content +='<p> image: ' +i[6]+ '</p>'
+            self.__content +='<img src='"+i[6]+ "'>"'
+
 
             #print i[0]
     @property
@@ -89,7 +90,19 @@ class Page(object):
         </head>
         <body>
             '''
-        self._body = "<h2>Filler Content</h2>"
+        self._body ='''
+        <h2>Game of Thrones</h2>
+
+            <li>{obj[house]}</li>
+				<li>{obj[name]}</li>
+				<li>{obj[sigil]}</li>
+				<li>{obj[motto]}</li>
+				<li>{obj[color1]}</li>
+				<li>{obj[color2]}</li>
+				<li>{obj[head]}</li>
+				<li>{obj[img]}</li>
+        '''
+
 
 
         self._footer = '''
