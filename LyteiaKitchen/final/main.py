@@ -11,19 +11,22 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         #writes page
         page = Page()
-        #if self.request.GET:
+        if self.request.GET:
             #model is created
-        model = ApiModel()
-        view = ApiView(model.house_data)
+            model.n = int(self.request.GET['n'])
+            model = ApiModel()
+            view = ApiView(model.house_data)
 
+            #self.response.write(page.return_page())
+            self.response.write(view.content)#writes content
         self.response.write(page.return_page())
-        self.response.write(view.content)#writes content
 
 
 ''' This class is where the api makes its calls to url, handles parsing data etc'''
 class ApiModel(object):
     def __init__(self):
         self.__url = "http://rebeccacarroll.com/api/got/got.xml"
+        self.__n = 0 #to keep count links
         self.__request = urllib2.Request(self.__url)
         self.__opener = urllib2.build_opener()
         self.send()#call send function
@@ -39,13 +42,13 @@ class ApiModel(object):
         houses = self.__xmldoc.getElementsByTagName('house')
         for i in houses:
             house_dict = dict()
-            name = i.getElementsByTagName('name')[0].firstChild.nodeValue
-            sigil = i.getElementsByTagName('sigil')[0].firstChild.nodeValue
-            motto = i.getElementsByTagName('motto')[0].firstChild.nodeValue
-            color1 = i.getElementsByTagName('color1')[0].firstChild.nodeValue
-            color2 = i.getElementsByTagName('color2')[0].firstChild.nodeValue
-            head = i.getElementsByTagName('head')[0].firstChild.nodeValue
-            image = i.getElementsByTagName('image')[0].firstChild.nodeValue
+            name = i.getElementsByTagName('name')[self.__n].firstChild.nodeValue
+            sigil = i.getElementsByTagName('sigil')[self.__n].firstChild.nodeValue
+            motto = i.getElementsByTagName('motto')[self.__n].firstChild.nodeValue
+            color1 = i.getElementsByTagName('color1')[self.__n].firstChild.nodeValue
+            color2 = i.getElementsByTagName('color2')[self.__n].firstChild.nodeValue
+            head = i.getElementsByTagName('head')[self.__n].firstChild.nodeValue
+            image = i.getElementsByTagName('image')[self.__n].firstChild.nodeValue
 
             house_dict =[name,sigil,motto,color1,color2,head,image]
             self.__house_data.house.append(house_dict)
