@@ -23,6 +23,7 @@ class ApiModel(object):
         self.__url = "http://rebeccacarroll.com/api/got/got.xml"
         self.__request = urllib2.Request(self.__url)
         self.__opener = urllib2.build_opener()
+        self.send()
 
     def send(self):
         self.__result = self.__opener.open(self.__request)#setting up result
