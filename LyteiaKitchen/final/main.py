@@ -11,7 +11,7 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         #writes page
         page = Page()
-        #if self.request.GET:
+        #if self.request.GET:#coditional had to comment out so model and view can work
             #model is created
         model = ApiModel()
         view = ApiView(model.house_data)
