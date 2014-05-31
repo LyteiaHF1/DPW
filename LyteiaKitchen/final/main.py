@@ -11,11 +11,14 @@ class MainHandler(webapp2.RequestHandler):
     def get(self):
         view = Page()
         self.response.write(view.return_page())
+        #instanuates model
+        model = ApiModel()
+        
 
 
 class ApiModel(object):
  ''' This class is where i get the api info setup '''
-    def __init__(self):
+     def __init__(self):
         self.__url = "http://rebeccacarroll.com/api/got/got.xml"
         self.__request = urllib2.Request(self.__url)
         self.__opener = urllib2.build_opener()
@@ -45,7 +48,9 @@ class ApiModel(object):
 
 
 
-
+    @property
+    def house_data(self):
+        return self.__house_data
 
 
 
@@ -74,13 +79,6 @@ class ApiView(object):
     @property
     def content(self):
         return __self.content
-
-
-
-
-
-
-
 
 class Page(object):
     def __init__(self):
