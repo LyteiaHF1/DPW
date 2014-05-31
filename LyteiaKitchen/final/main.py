@@ -18,7 +18,7 @@ class MainHandler(webapp2.RequestHandler):
         self.response.write(view.content)#writes content
 
 
-
+''' This class is where the api makes its calls to url, handles parsing data etc'''
 class ApiModel(object):
     def __init__(self):
     #def __init__(self):
@@ -36,7 +36,7 @@ class ApiModel(object):
         self.__xmldoc = minidom.parse(self.__result)
         self.__house_data = ApiData()
         houses = self.__xmldoc.getElementsByTagName('house')
-        for i in house:
+        for i in houses:
             house_dict = dict()
             name = i.getElementsByTagName('name')[0].firstChild.nodeValue
             sigil = i.getElementsByTagName('sigil')[0].firstChild.nodeValue
@@ -47,19 +47,21 @@ class ApiModel(object):
             image = i.getElementsByTagName('image')[0].firstChild.nodeValue
 
             house_dict =[name,sigil,motto,color1,color2,head,image]
-            self.__house_data_house.append(house_dict)
+            self.__house_data.house.append(house_dict)
     @property
     def house_data(self):
         return self.__house_data
 
 
-
+''' This class is for handling the data between model and view'''
 class ApiData(object):
     def __init__(self):
     #def __init__(self):
     #empty array for data
         self.house = []
 
+
+''' This class is for the view'''
 class ApiView(object):
     def __init__(self, house_data):
 
