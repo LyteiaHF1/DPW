@@ -31,8 +31,6 @@ class MainHandler(webapp2.RequestHandler):
 			#Puts info from array results on screen
 			self.response.write(view.content)
 			
-			
-
 class ApiModel(object):
 	'''  This model handles fetching, parsing and sorting data from the api '''
 
